@@ -36,4 +36,7 @@ Y esta en **negrita**
 
 Ahora instalamos el markdown pdf en extensiones y  
 con boton drcho podemos hacerlo todo el texto en   
-pdf, imagen...
+pdf, imagen... 
+
+  
+    Esto se hace con 2 espacios, 1 enter y 1 tabulación
