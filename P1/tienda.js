@@ -1,38 +1,21 @@
-//-- El servidor de mi tienda
+const http = require('http');
+const fs = require('fs');
+const url = require('url');
 
+const PUERTO = 9090;
 
-//-- * Fichero .html
-//-- * Ficheros con imagenes (.jpg, .png)
-//-- * Ficheros .css
-//---   Devolver el fichero pedido
-//-- Si no localizo fichero: PAGINA DE ERROR
+const mime = {
+    'html' : 'text/html',
+    'css'  : 'text/css',
+    'jpg'  : 'image/jpg',
+    'ico'  : 'image/x-icon'
+ };
 
-//-- CREAR UN SERVIDOR
-//-- Se llama a la función de retrollamada
-//-- cada vez que hay una petición
+const server = http.createServer((req, res)=>{
+    console.log("Petición recibida!");
 
-    //-- Localizar el recurso que nos piden
-    //-- (sacarlo por la consola)
-    //-- OBTENER el nombre del fichero
+});
 
-//-- LECTURA ASINCRONA del fichero
-    //-- Función de retrollamada de lectura
+server.listen(PUERTO);
 
-    //-- Imprimir en la consola el nombre del fichero
-    //-- que estoy leyendo
-
-    //-- Si hay error, Generar la pag html de error
-
-    //-- Si no hay error
-
-        //-- Devolver el contenido como respuesta
-        //-- La respuesta depende del tipo de fichero
-            //-- HTML: Cabecera: 'Content-Type', 'text/html'
-            //-- IMAGEN: 'image/jpg', 'image/png'
-            //-- CSS: 'text/css'
-
-            //-- ¿Como puedo saber que tipo fichero?
-            //-- Por la extensión del fichero
-            //-- Nombre fichero: "index.html", "hola.jpg"
-            //-- A partir del nombre fichero, obtener su extensión
-            //-- "html", "jpg", "png" ,"css" 
+console.log("Server On. Listening in port: " + PUERTO);
