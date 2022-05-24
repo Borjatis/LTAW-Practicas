@@ -52,7 +52,7 @@ const server = http.createServer((req, res)=>{
               if(error){
                   throw error
               }
-              console.log("Finalizando lectura");
+              console.log("Se ha leído correctamente");
               console.log(files);
             file=(files.toString());
               fs.writeFileSync(ls_OUT, file);
@@ -60,10 +60,10 @@ const server = http.createServer((req, res)=>{
               res.write(file);
             res.end();
           });
-          console.log("iniciando lectura");
+          console.log("Iniciando lectura");
             
           }else{
-            console.log("Recurso inexistente");
+            console.log("Llamada al fail");
             fs.readFile('pages and images/fail.html',(error,contenido) => {
             res.writeHead(404, {'Content-Type': 'text/html'});
             res.write(contenido);    

@@ -1,0 +1,59 @@
+[
+    {
+        "productos": [
+            {
+                "nombre": "Omen el fantasma",
+                "descripcion": "Es un controlador con nacionalidad desconocida. Se le conoce por ser un cazador de las sombras muy escurridizo",
+                "stock": 2,
+                "precio": 90
+            },
+            {
+                "nombre": "Killjoy la agente alemana",
+                "descripcion": "Es una centinela con nacionalidad alemana. Se la conoce por ser una genio que posee un arsenal de inventos.",
+                "stock": 3,
+                "precio": 80
+            },
+            {
+                "nombre": "Cypher el agente marroqui",
+                "descripcion": "Es un centinela con nacionalidad marroquí. Se le conoce por ser capaz de adelantarse a los movimientos de los enemigos y cubrir posiciones.",
+                "stock": 8,
+                "precio": 70
+            },
+            {
+                "nombre": "Reyna la agente mexicana",
+                "descripcion": "Es una duelista con nacionalidad mexicana. Se la conoce por ser una asesina con recuperación de vida.",
+                "stock": 4,
+                "precio": 90
+            }
+        ]
+    },
+    {
+        "usuarios":[
+            {
+                "user": "root",
+                "nombre": "rot",
+                "email": "root@hotmail.com"
+            },
+            {
+                "user": "borjatis",
+                "nombre": "borja",
+                "email": "borja@hotmail.com"
+            }
+        ]
+    },
+    {
+        "pedidos":[
+            {
+                "user": "borjatis",
+                "dirección": "calle de jatius, n_3",
+                "tarjeta": 333,
+                "productos":[
+                    "Omen el fantasma x 1",
+                    "",
+                    "Reyna la agente mexicana x 1",
+                    ""
+                ]
+            }
+        ]
+    }
+]
