@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Permitir sólo scripts y ficheros de la máquina local -->
+    <!-- Con esto se elimina el aviso de seguridad: Insecure Content-Security-Policy -->
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self';" />
+
+    <!-- Hoja de estilo de la interfaz -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Cargar el proceso asociado a esta página -->
+    <script src="index.js" defer></script>
+
+    <title>Home Super Chat</title>
+</head>
+<body>
+    <h1>Home Super Chat (Server)</h1>
+
+    <hr>
+    <div class="left">
+        <hr>
+        <h2>Información</h2>
+        <ul class="blue" id="info">
+            <li>Versión de Node: <span id="info1" class="blue"></span> </li>
+            <li>Versión de Chrome: <span id="info3" class="blue"></span> </li>
+            <li>Versión de Electron: <span id="info2" class="blue"></span> </li>
+            <li>Arquitectura: <span id="info4" class="blue"></span> </li>
+            <li>Plataforma: <span id="info5" class="blue"></span></li>
+            <li>Diretorio: <span id="info6" class="blue"></span></li>
+        </ul>
+        <h2>Direccion IP</h2>
+        <p id="dir_ip" class="blue"></p>
+        <img src="" alt="Código QR" id="qr">
+        <hr>
+    </div>
+
+    <div class="right" id="mensajes">
+        <p>Mensajes: <br><br><span id="display" class="blue"></span></p>
+    </div>
+
+    <div class="users">
+        <p>Número usuarios conectados: <span id="info_users" class="blue"></span></p>
+        <button id="button_test">Enviar mensaje de prueba</button>
+    </div>
+</body>
+</html>
