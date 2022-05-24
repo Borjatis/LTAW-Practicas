@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Chat_client.css">
+  <title>Super Chat</title>
+
+  <!-- Cargar la biblioteca Socket.IO. Nos la debe entregar el servidor -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- Cliente que usa los Sockets.io-->
+  <script src="Chat_client.js" defer></script>
+</head>
+
+<body>
+  <h2>Super Chat</h2>
+  <p id="display"></p>
+  <input type="text" placeholder="Mensaje..." autocomplete="off" id="message">
+  <audio src="./messenger.mp3" id="audio_msg"></audio>
+  <audio src="./local.mp3" id="music"></audio>
+</body>
+</html>
