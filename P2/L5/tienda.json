@@ -1,0 +1,52 @@
+[
+    {
+        "productos": [
+            {
+                "nombre": "omen",
+                "descripcion": "producto 1",
+                "stock": 20
+            },
+            {
+                "nombre": "killjoy",
+                "descripcion": "producto 2",
+                "stock": 3
+            },
+            {
+                "nombre": "cypher",
+                "descripcion": "producto 3",
+                "stock": 7
+            }
+        ]
+    },
+    {
+        "usuarios":[
+            {
+                "user": "borjatis",
+                "nombre": "borja",
+                "email": "borja.ca@hotmail.com"
+            },
+            {
+                "user": "usuario",
+                "nombre": "cliente",
+                "email": "usuario@hotmail.com"
+            }
+        ]
+    },
+    {
+        "pedidos":[
+            {
+                "user": "borjatis",
+                "dirección": "calle de jatius, n_3",
+                "tarjeta": 333,
+                "productos":[
+                    {
+                        "producto": "killjoy"
+                    },
+                    {
+                        "producto": "cypher"
+                    }
+                ]
+            }
+        ]
+    }
+]

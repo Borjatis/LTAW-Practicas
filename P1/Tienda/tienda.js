@@ -11,6 +11,7 @@ const mime = {
     'html' : 'text/html',
     'css'  : 'text/css',
     'jpg'  : 'image/jpg',
+    "gif"  : "image/gif",
     'ico'  : 'image/x-icon'
  };
 
